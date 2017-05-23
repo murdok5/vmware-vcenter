@@ -1,4 +1,4 @@
-class vc_sample {
+class vcenter::vc_sample {
 
   transport { 'demo':
     username => 'tseadmin@vsphere.local',
