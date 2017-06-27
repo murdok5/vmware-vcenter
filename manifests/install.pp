@@ -7,13 +7,18 @@ class vcenter::install {
     ensure => present,
   }
 
+  package { 'nokogiri':
+    ensure   => '1.7.2',
+    provider => puppet_gem,
+  }
+
   package { 'rbvmomi':
-    ensure   => present,
-    provider => puppetserver_gem,
+    ensure   => '1.11.2',
+    provider => puppet_gem,
   }
 
   package { 'hocon':
     ensure   => present,
-    provider => puppetserver_gem,
+    provider => puppet_gem,
   }
 }
