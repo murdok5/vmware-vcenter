@@ -27,6 +27,9 @@ gem](https://github.com/vmware/rbvmomi):
 ## Installation
 
 $ puppet module install vmware/vcenter
+Requires the following modules:
+
+  nanliu-staging, vmware-vmware_lib, puppetlabs-stdlib
 
 ## Usage
 
